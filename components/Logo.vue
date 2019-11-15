@@ -1,15 +1,16 @@
 <template>
-  <div class="MoodleDocsLogo">
-    <img src="~/assets/logo.svg">
-  </div>
+  <v-card class="MoodleDocsLogo mb-2">
+    <v-card-text>
+      <img src="~/assets/logo.svg" />
+    </v-card-text>
+  </v-card>
 </template>
 
 <style scoped>
-  .MoodleDocsLogo img{
-    height: 8em;
-  }
-
-  .MoodleDocsLogo span{
-    font-size: 8em;
-  }
+.MoodleDocsLogo {
+  background: #aaa;
+}
+.MoodleDocsLogo img {
+  width: 25em;
+}
 </style>
