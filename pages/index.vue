@@ -15,9 +15,13 @@
             ></v-list-item-title
           >
         </v-list-item-content>
+      </v-list-item>
+      <v-list-item>
         <v-list-item-content>
           <nuxt-link to="/doc/skript2">Skript Kapitel 2</nuxt-link>
         </v-list-item-content>
+      </v-list-item>
+      <v-list-item>
         <v-list-item-content>
           <nuxt-link to="/doc/skript3">Skript Kapitel 3</nuxt-link>
         </v-list-item-content>
