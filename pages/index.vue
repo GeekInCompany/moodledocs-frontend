@@ -9,13 +9,17 @@
       </v-card-title>
       <v-list-item>
         <v-list-item-content>
-          <v-list-item-title>Skript Kapitel 1</v-list-item-title>
+          <v-list-item-title
+            ><nuxt-link to="/doc/skript1"
+              >Skript Kapitel 1</nuxt-link
+            ></v-list-item-title
+          >
         </v-list-item-content>
         <v-list-item-content>
-          <v-list-item-title>Skript Kapitel 2</v-list-item-title>
+          <nuxt-link to="/doc/skript2">Skript Kapitel 2</nuxt-link>
         </v-list-item-content>
         <v-list-item-content>
-          <v-list-item-title>Skript Kapitel 3</v-list-item-title>
+          <nuxt-link to="/doc/skript3">Skript Kapitel 3</nuxt-link>
         </v-list-item-content>
       </v-list-item>
     </v-card>
@@ -23,7 +27,7 @@
 </template>
 
 <script>
-import Logo from "~/components/Logo.vue";
+import Logo from '~/components/Logo.vue';
 
 export default {
   components: {
