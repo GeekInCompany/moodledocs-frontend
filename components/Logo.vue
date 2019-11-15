@@ -1,7 +1,6 @@
 <template>
   <div class="MoodleDocsLogo">
-    <img src="~/assets/moodle_logo.png">
-    <span>Docs</span>
+    <img src="~/assets/logo.svg">
   </div>
 </template>
 
