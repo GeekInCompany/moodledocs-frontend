@@ -8,6 +8,9 @@
 import PDFDocument from "~/components/PDFDocument";
 import pdfjsLib from "pdfjs-dist";
 
+pdfjsLib.GlobalWorkerOptions.workerSrc =
+  '/node_modules/pdfjs-dist/build/pdf.worker.js';
+
 export default {
   components: {
     PDFDocument
@@ -18,18 +21,17 @@ export default {
       currentPage: 0,
       pageCount: 0,
       src:
-        "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf"
+        "https://hackathon.hopfenspace.org/skript.pdf"
     };
   },
   mounted() {
-    import("pdfjs-dist/webpack").then(pdfjsLib => {
+      let ctx = this;
       var loadingTask = pdfjsLib.getDocument(this.src);
       loadingTask.promise.then(function(pdf) {
         pdf.getPage(1).then(function(page) {
-          this.pages.push(page);
+          ctx.pages.push(page);
         });
       });
-    });
   }
 };
 </script>

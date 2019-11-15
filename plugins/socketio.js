@@ -1,13 +1,8 @@
 import io from 'socket.io-client'
 
-import { remote } from "electron";
-import { disconnect } from 'cluster';
-
-const ACCESS_TOKEN = "ACCESS_TOKEN";
-
 
 //const baseURL = remote.getGlobal('tanlockGlobal').restUrl.replace("http","ws");
-const baseURL = "ws://localhost:3000";
+const baseURL = "wss://hackathon.hopfenspace.org";
 
 const socket = io(`${baseURL}/`);
 function initWS() {
